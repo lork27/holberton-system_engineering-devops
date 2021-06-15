@@ -1,2 +1,2 @@
 #!/bin/bash
-printenv & type -F
+printenv & type -f
