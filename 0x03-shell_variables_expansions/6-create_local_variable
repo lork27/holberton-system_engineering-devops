@@ -1,2 +1,4 @@
 #!/bin/bash
-local BETTY=Holberton
+function hello {
+	local BETTY=Holberton
+}
