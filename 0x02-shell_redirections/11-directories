@@ -1,2 +1,2 @@
 #!/bin/bash
-echo "Total $(find -type d | wc -l)"
+echo "Total $(find -mindepth -type d | wc -l)"
