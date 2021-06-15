@@ -1,2 +1,2 @@
 #!/bin/bash
-tr $1 AZ ce
+tr Ac Ze < $1
