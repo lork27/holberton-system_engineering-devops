@@ -4,7 +4,7 @@ x=1
 while [ $x -le 10 ]
 do
 	if [ $x == 9 ]; then
-		echo "Hi"
+		printf "Best School\nHi\n"
 	else
 		echo "Best School"
 	fi
