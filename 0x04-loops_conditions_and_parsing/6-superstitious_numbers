@@ -5,11 +5,12 @@ while [ $x -le 20 ]
 do
 	if [ $x == 4 ]; then
 		echo "$x"
-		echo "bad luck"
-	elif [ $x == 8 ]; then
+		echo "bad luck from China"
+	elif [ $x == 9 ]; then
 		echo "$x"
-		echo "good luck"
+		echo "bad luck from Japan"
 	elif [ $x == 17 ]; then
+		echo "$x"
 		echo "bad luck from Italy"
 	else
 		echo "$x"
