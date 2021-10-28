@@ -6,14 +6,14 @@ then
 elif [ -e school ]
 then
 	echo "school file exist"
-elif [ ! -s school ]
-then
-	echo "school file is empty"
-elif [ -s school ]
-then
-	echo "school file is not empty"
-elif [ -f school ]
-then
-	echo "school file is a regular file"
+	elif [ ! -s school ]
+	then
+		echo "school file is empty"
+	elif [ -s school ]
+	then
+		echo "school file is not empty"
+	elif [ -f school ]
+	then
+		echo "school file is a regular file"
 fi
 
