@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+# This script is displaying "Best School" 10 times
+x=1
+while [ $x -le 20 ]
+do
+	if [ $x == 4 ]; then
+		echo "bad luck"
+	elif [ $x == 8 ]; then
+		echo "good luck"
+	elif [ $x == 17 ]; then
+		echo "bad luck from Italy"
+	else
+		echo "$x"
+	fi
+	(( x++ ))
+done
