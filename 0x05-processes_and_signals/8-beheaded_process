@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# kills running script
+kill -9 "$(pgrep -f 7-highlander)"
