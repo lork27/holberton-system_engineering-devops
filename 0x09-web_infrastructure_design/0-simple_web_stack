@@ -1,0 +1,14 @@
+In this "whiteboard" I'm designing a simple web infraestructure. It starts by
+the user typing "foobar.com" on its web browser sending a HTTP request to the internet.
+
+If the user machines doesn't know what IP address belongs to foobar.com it first will go to
+the DNS server to get that information. In this case not only it uses the A record type to know that
+www.foobar.com is 8.8.8.8 but also it needs to use the CNAME record type to know that foobar.com is indeed
+an alias for www.foobar.com
+
+After that it goes to the server that has that IP address and the server recieves the request and starts
+working on its response by building with the webserver and appserver the website using the codebase and database
+as the information to build it.
+
+Once the server finishes it send the HTTP response back to the user web browser and then the browser
+finishes the job by rendering the website for the user.
