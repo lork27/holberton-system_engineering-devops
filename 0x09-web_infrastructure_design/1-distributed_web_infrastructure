@@ -1,2 +1,10 @@
 https://i.imgur.com/q5o3vcH.jpg
 
+I'm adding to servers to eliminate that SPOF and being able to do maintenance and updates
+on my application with less or none downtime.
+
+In this case I'm using an active-active configuration to achieve load balancing
+
+Some issues with this configuration are the lack of security or monitoring tools.
+It lacks any firewall whatsoever, it doesn't have any way of monitoring each individual server
+to know when its getting overloaded and it doesn't use HTTPS
