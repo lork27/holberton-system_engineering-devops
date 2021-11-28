@@ -14,3 +14,12 @@ as the information to build it.
 
 Once the server finishes it send the HTTP response back to the user web browser and then the browser
 finishes the job by rendering the website for the user.
+
+Some glaring issues with this setup are, it has SPOF (Single Point Of Failure). For example if the server crashes
+or gets overloaded by too much trafic.
+
+Because is a one server setup if I need to do maintenance for the whole time I'm uploading the new version the
+website will be offline, or worse, if the new version has bugs it will be the only version the user will be able
+to get access to.
+
+Also if I start getting to much traffict the website won't be able to be scaled up with this setup
