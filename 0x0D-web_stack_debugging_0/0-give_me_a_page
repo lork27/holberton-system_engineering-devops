@@ -3,3 +3,4 @@
 apt-get update
 apt-get -y install apache2
 echo "ServerName localhost" >> /etc/apache2/conf-available/servername.conf
+service apache2 restart
