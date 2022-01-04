@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# Install and setup apache on given docker
+apt-get update
+apt-get -y install apache2
+echo "ServerName localhost" >> /etc/apache2/conf-available/servername.conf
