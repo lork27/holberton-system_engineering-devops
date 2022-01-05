@@ -2,3 +2,4 @@
 #Installs and configure NGINX
 apt-get update
 apt-get -y install nginx
+echo "Hello World" > /usr/share/nginx/html/index.html
