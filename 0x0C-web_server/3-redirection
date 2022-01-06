@@ -1,8 +1,7 @@
 #!/usr/bin/env bash
-#Installs and configure NGINX
+# Bash script installs nginx and sets up curl to return Hello World
+
 apt-get update
 apt-get -y install nginx
-mkdir /redirect_me
-touch /redirect_me/index.html
-echo "https://www.youtube.com/watch?v=QH2-TGUlwu4" > /redirect_me/index.html
+sed -i '24 i \\trewrite ^/redirect_me https://www.youtube.com/watch?v=QH2-TGUlwu4i permanent;' /etc/nginx/sites-enabled/default
 service nginx restart
