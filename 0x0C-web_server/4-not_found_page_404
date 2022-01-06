@@ -3,7 +3,7 @@
 
 apt-get update
 apt-get -y install nginx
-touch usr/share/nginx/html/404.html
+touch /usr/share/nginx/html/404.html
 echo "Ceci n'est pas une page" > /usr/share/nginx/html/404.html
 sed -i '26 i \\terror_page /usr/share/nginx/html/404.html;' /etc/nginx/sites-enabled/default
 service nginx restart
