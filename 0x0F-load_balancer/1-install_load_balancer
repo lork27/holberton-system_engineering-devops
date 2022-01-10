@@ -10,6 +10,6 @@ frontend Local_Server
 
 backend hbtn_backend
     balance roundrobin
-    server web1 35.196.44.201:80 check
-    server web2 18.208.171.12:80 check" >> /etc/haproxy/haproxy.cfg
+    server 3211-web-01 35.196.44.201:80 check
+    server 3211-web-02 18.208.171.12:80 check" >> /etc/haproxy/haproxy.cfg
 service haproxy restart
