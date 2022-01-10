@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 #install and configure haproxy loadbalancer
+apt-get -y update
+apt-get -y install haproxy=2.0.13*
 echo "frontend Local_Server
     bind *:80
     mode http
