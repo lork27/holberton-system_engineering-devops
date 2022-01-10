@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
 #install and configure haproxy loadbalancer
+apt install --no-install-recommends software-properties-common -y
+add-apt-repository ppa:vbernat/haproxy-2.4 -y
 apt-get -y update
-apt-get -y install haproxy=2.0.13*
+apt install haproxy=2.4.\*
 echo "
 frontend load_balancer
     bind *:80
@@ -13,3 +15,4 @@ backend webserver
     server 3211-web-01 35.196.44.201:80 check
     server 3211-web-02 18.208.171.12:80 check" >> /etc/haproxy/haproxy.cfg
 service haproxy restart
+
