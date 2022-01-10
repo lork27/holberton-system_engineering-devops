@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#change HTTP header response to know which server gave the response
-apt-get update
+# Configures a new Ubuntu server with a custom HTTP header response
+apt-get -y update
 apt-get -y install nginx
 ufw allow 'Nginx HTTP'
-sudo sed -i "46i\add_header X-Served-By $HOSTNAME;" /etc/nginx/sites-available/default
+sudo sed -i "46i\add_header X-Served-By $HOSTNAME ;" /etc/nginx/sites-available/default
 service nginx restart
