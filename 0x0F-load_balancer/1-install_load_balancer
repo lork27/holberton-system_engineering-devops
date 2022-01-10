@@ -3,7 +3,7 @@
 apt install --no-install-recommends software-properties-common -y
 add-apt-repository ppa:vbernat/haproxy-2.4 -y
 apt-get -y update
-apt install haproxy=2.4.\*
+apt install -y haproxy=2.4.\*
 echo "
 frontend load_balancer
     bind *:80
