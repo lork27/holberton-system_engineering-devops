@@ -3,12 +3,12 @@
 apt-get -y update
 apt-get -y install haproxy=2.0.13*
 echo "
-frontend Local_Server
+frontend load_balancer
     bind *:80
     mode http
-    default_backend hbtn_backend
+    default_backend webserver
 
-backend hbtn_backend
+backend webserver
     balance roundrobin
     server 3211-web-01 35.196.44.201:80 check
     server 3211-web-02 18.208.171.12:80 check" >> /etc/haproxy/haproxy.cfg
