@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# /etc/nginx/sites-enabled/default
+#listen 80 default_server;
+#listen [::]:80 default_server ipv6only=on;
+sed -i "s/listen 8080 default_server;/listen 80 default_server;/" /etc/nginx/sites-enabled/default 
+sed -i "s/listen [::]:8080 default_server ipv6only=on;/listen [::]:80 default_server ipv6only=on;/" /etc/nginx/sites-enabled/default
+service nginx restart
