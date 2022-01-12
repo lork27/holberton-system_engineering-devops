@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 #comment
-cp -i /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
+/bin/cp -rf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/
 service nginx restart
-pkill nginx
+service nginx stop
