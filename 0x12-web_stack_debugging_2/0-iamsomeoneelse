@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+sudo runuser -l $1 -c whoami
+
