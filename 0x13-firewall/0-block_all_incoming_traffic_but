@@ -1,6 +1,6 @@
-ufw enable
-ufw allow 22/tcp
-allow 443/tcp
-ufw allow 80/tcp
-ufw disable
-ufw enable
+sudo ufw enable
+sudo ufw allow 22/tcp
+sudo allow 443/tcp
+sudo ufw allow 80/tcp
+sudo ufw disable
+sudo ufw enable
