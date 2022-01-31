@@ -8,10 +8,10 @@ from sys import argv
 if __name__ == "__main__":
     if len(argv) == 2:
         num = argv[1]
-        url = "https://jsonplaceholder.typicode.com"
+        url = "https://jsonplaceholder.typicode.com/"
         # print("{:d} type: {}".format(request_num, type(request_num)))A
-        usr = requests.get("{}/users/{}".format(url, num)).json()["name"]
-        r = requests.get("{}/todos?userId={}".format(url, num)).json()
+        usr = requests.get(url + "users/{}".format(num)).json()["name"]
+        r = requests.get(url + "todos?userId={}".format(num)).json()
         # name = usr.json()["name"]
         tasks = 0
         total = 0
