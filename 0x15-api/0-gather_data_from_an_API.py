@@ -6,7 +6,7 @@ import requests
 from sys import argv
 
 if __name__ == "__main__":
-    if len(argv) == 2:
+    if len(argv) == 2 and argv[1].isdigit():
         num = argv[1]
         url = "https://jsonplaceholder.typicode.com/"
         # print("{:d} type: {}".format(request_num, type(request_num)))A
