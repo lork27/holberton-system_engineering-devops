@@ -1,7 +1,6 @@
 #!/usr/bin/python3
-"""
-module that takes argv 1 and uses it to request to a fake api
-"""
+''' returns information about his/her TODO list progress '''
+
 import requests
 from sys import argv
 
