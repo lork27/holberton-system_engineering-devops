@@ -10,10 +10,7 @@ if __name__ == "__main__":
         num = argv[1]
         url = "https://jsonplaceholder.typicode.com"
         # print("{:d} type: {}".format(request_num, type(request_num)))A
-        try:
-            usr = requests.get("{}/users/{}".format(url, num)).json()["name"]
-        except:
-            usr = None
+        usr = requests.get("{}/users/{}".format(url, num)).json()["name"]
         r = requests.get("{}/todos?userId={}".format(url, num)).json()
         # name = usr.json()["name"]
         tasks = 0
@@ -22,10 +19,10 @@ if __name__ == "__main__":
         for element in r:
             if element["completed"] is True:
                 tasks += 1
-                nametask += "\t" + element["title"] + "\n"
+                nametask += "\t " + element["title"] + "\n"
             total += 1
-        print("Exployee {} is done with tasks ({}/{}):".format(usr,
-                                                               tasks, total))
+        print("Exployee {} is done with tasks({}/{}):".format(usr,
+                                                              tasks, total))
         print(nametask, end="")
     else:
         print("length WRONG")
