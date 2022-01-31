@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-from markupsafe import re
-import requests
-from sys import argv
 """
 module that takes argv 1 and uses it to request to a fake api
 """
+import requests
+from sys import argv
 
 if __name__ == "__main__":
     if len(argv) == 2:
