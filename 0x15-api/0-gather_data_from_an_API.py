@@ -23,6 +23,6 @@ if __name__ == "__main__":
             total += 1
         print("Exployee {} is done with tasks ({}/{}):".format(usr,
                                                                tasks, total))
-        print(nametask)
+        print(nametask, end="")
     else:
         print("length WRONG")
