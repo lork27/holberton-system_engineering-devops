@@ -10,7 +10,7 @@ if __name__ == "__main__":
         num = argv[1]
         url = "https://jsonplaceholder.typicode.com/"
         # print("{:d} type: {}".format(request_num, type(request_num)))A
-        usr = requests.get(url + "users/{}".format(num)).json()["name"]
+        usr = requests.get(url+'users/{}'.format(argv[1])).json()["name"]
         r = requests.get(url + "todos?userId={}".format(num)).json()
         # name = usr.json()["name"]
         tasks = 0
