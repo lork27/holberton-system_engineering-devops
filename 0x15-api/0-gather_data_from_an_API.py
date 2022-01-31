@@ -1,4 +1,4 @@
-from traceback import print_tb
+#!/usr/bin/python3
 from markupsafe import re
 import requests
 from sys import argv
