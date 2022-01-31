@@ -22,5 +22,3 @@ if __name__ == "__main__":
         print("Exployee {} is done with tasks({}/{}):".format(usr,
                                                               tasks, total))
         print(nametask, end="")
-    else:
-        print("length WRONG")
