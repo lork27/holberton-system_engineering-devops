@@ -2,9 +2,9 @@
 """
 module that takes argv 1 and uses it to request to a fake api!
 """
+import json
 import requests
 from sys import argv
-import json
 
 if __name__ == "__main__":
     if len(argv) == 2 and argv[1].isdigit():
