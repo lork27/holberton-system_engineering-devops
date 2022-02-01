@@ -4,6 +4,7 @@ module that takes argv 1 and uses it to request to a fake api!
 """
 import requests
 from sys import argv
+import json
 
 if __name__ == "__main__":
     if len(argv) == 2 and argv[1].isdigit():
@@ -19,6 +20,6 @@ if __name__ == "__main__":
                         'username': str(usr)}
             nametask[str(num)].append(tmp_dict)
         with open("{}.json".format(num), "w") as f:
-            f.write(str(nametask))
+            json.dump(nametask, f)
     else:
         print("length WRONG")
