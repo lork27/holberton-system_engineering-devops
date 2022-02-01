@@ -12,12 +12,12 @@ if __name__ == "__main__":
         usr = requests.get(url+'users/{}'.format(argv[1])).json()["username"]
         r = requests.get(url + "todos?userId={}".format(num)).json()
 
-        nametask = {num: []}
+        nametask = {str(num): []}
         for element in r:
-            tmp_dict = {'task': element["title"],
+            tmp_dict = {'task': str(element["title"]),
                         'completed': element["completed"],
-                        'username': usr}
-            nametask[num].append(tmp_dict)
+                        'username': str(usr)}
+            nametask[str(num)].append(tmp_dict)
         with open("{}.json".format(num), "w") as f:
             f.write(str(nametask))
     else:
