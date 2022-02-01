@@ -14,9 +14,9 @@ if __name__ == "__main__":
 
         nametask = {num: []}
         for element in r:
-            tmp_dict = {"task": element["title"],
-                        "completed": element["completed"],
-                        "username": usr}
+            tmp_dict = {'task': element["title"],
+                        'completed': element["completed"],
+                        'username': usr}
             nametask[num].append(tmp_dict)
         with open("{}.json".format(num), "w") as f:
             f.write(str(nametask))
